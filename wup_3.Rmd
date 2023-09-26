@@ -71,4 +71,5 @@ This data shows the median of the back row being 4 and it shows that the front h
 
 ## Conclusions
 
+Is there a difference between the alcohol consumed between the row you choose to sit in? Yes there is a difference between the alcohol consumed by the row you sit in. Based on the data the people who sit in the back row consume more alcohol. The P value is 0.00016 which is smaller then 0.05 so I will reject the null hypothesis.
 
