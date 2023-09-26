@@ -22,6 +22,14 @@ $H_0$ There is no difference in the alchohol consumption based on the row you si
 
 $H_a$ There is a difference in the alchohol consumption based on the row you sit in.
 
+# Methods 
+
+The response variable is numerical and the explanatory variable is categorical. Therefore we use numerical~cat.
+
+## results 
+
+### graphical results  
+
 ## Now with ggplot - first select the basic data
 
 ```{r}
@@ -32,17 +40,34 @@ basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 ```{r}
 basicCN + geom_boxplot()
 ```
-  
+ 
+ 
+ This boxplot shows that the back row has the most amount of alchohol consumption. The front and middle row has a very little difference between the alchohol they consume. 
+
   
 ### get fancy  
+
 
 ```{r}
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
 
+
 ## Numerical Summarys 
 
+
+```{r}
+favstats(alcohol~Seat,data=davisdata)
+```
+
+This data shows the median of the back row being 4 and it shows that the front has 0 and the middle has a median of 1.
+
 ## Inferential Tests
+
+```{r}
+
+```
+
 
 ## Conclusions
 
